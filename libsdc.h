@@ -5,8 +5,8 @@
  * Created on 25.03.2025, 20:29
  */
 
-#ifndef SDCARD_H
-#define SDCARD_H
+#ifndef LIBSDC_H
+#define LIBSDC_H
 
 #include <stddef.h>
 #include <stdint.h>
@@ -128,4 +128,4 @@ bool readMultiBlock(uint32_t address, SDConsumer consume);
  */
 bool writeSingleBlock(uint32_t address, uint8_t *block);
 
-#endif /* SDCARD_H */
+#endif /* LIBSDC_H */
