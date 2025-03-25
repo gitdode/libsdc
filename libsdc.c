@@ -178,7 +178,7 @@ static uint8_t sendOpCond(void) {
     return response;
 }
 
-bool initSDCard(void) {
+bool sdcInit(void) {
     uint8_t response[5];
 
     // power on
@@ -243,7 +243,7 @@ bool initSDCard(void) {
     return true;
 }
 
-bool readSingleBlock(uint32_t address, uint8_t *block) {
+bool sdcReadSingleBlock(uint32_t address, uint8_t *block) {
     select();
 
     command(CMD17, address, CMD17_CRC);
@@ -276,7 +276,7 @@ bool readSingleBlock(uint32_t address, uint8_t *block) {
     return success;
 }
 
-bool readMultiBlock(uint32_t address, SDConsumer consume) {
+bool sdcReadMultiBlock(uint32_t address, SDConsumer consume) {
     select();
 
     command(CMD18, address, CMD18_CRC);
@@ -333,7 +333,7 @@ bool readMultiBlock(uint32_t address, SDConsumer consume) {
     return success;
 }
 
-bool writeSingleBlock(uint32_t address, uint8_t *block) {
+bool sdcWriteSingleBlock(uint32_t address, uint8_t *block) {
     select();
 
     command(CMD24, address, CMD24_CRC);
