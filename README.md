@@ -14,8 +14,8 @@ Samsung.
 ## Usage
 
 1. Include `libsdc.h` and `libsdc.a` in the project
-2. To make the library device and CPU frequency independent, the
-`_sdc*` functions in `libsdc.h` must be implemented in the application
+2. Implement the `_sdc*` functions in `libsdc.h` in the application
+(this is to make the library device and CPU frequency independent)
 
 ## Features
 
