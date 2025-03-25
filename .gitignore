@@ -1,0 +1,9 @@
+/nbproject/private/
+/build
+*.elf
+*.hex
+*.lst
+*.a
+*.d
+*.o
+*.map
