@@ -45,8 +45,8 @@
 #define ACMD41_ARG  0x40000000
 #define ACMD41_CRC  0x76
 
-// TODO depends on SPI SCK frequency
-#define SD_MAX_READ     50000 // SPI clock ticks in 100 ms
+// sufficient for fOSC 16 MHz / 4 (default)
+#define SD_MAX_READ     50000  // SPI clock ticks in 100 ms
 #define SD_MAX_WRITE    125000 // SPI clock ticks in 250 ms
 
 #define SD_BLOCK_SIZE   512
