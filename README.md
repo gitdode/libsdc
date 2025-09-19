@@ -7,9 +7,11 @@ Static avr-libc library providing basic support for SD cards.
 Tested with a few recent SD cards with 16/64 GB from SanDisk, Transcend and 
 Samsung.
 
-## TODO
+## Features
 
-- Write multiple blocks
+- Read single block
+- Read multiple blocks
+- Write single block
 
 ## Usage
 
@@ -17,8 +19,6 @@ Samsung.
 2. Implement the `_sdc*` functions in `libsdc.h` in the application
 (this is to make the library device and CPU frequency independent)
 
-## Features
+## TODO
 
-- Read single block
-- Read multiple blocks
-- Write single block
+- Write multiple blocks
