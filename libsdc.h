@@ -119,8 +119,8 @@ bool sdcReadSingleBlock(uint32_t address, uint8_t *block);
 bool sdcReadMultiBlock(uint32_t address, SDConsumer consume);
 
 /**
- * Writes a single block of 512 bytes starting at the given address
- * from the given buffer and returns true on success, false otherwise.
+ * Writes a single block of 512 bytes at the given address from 
+ * the given buffer and returns true on success, false otherwise.
  *
  * @param address address in 512 byte units
  * @param block 512 byte buffer

@@ -17,7 +17,7 @@
  * @param crc
  */
 static void command(uint8_t command, uint32_t argument, uint8_t crc) {
-    // 6-bit command, start bit is always 0, _sdcTxter bit is 1 (host command)
+    // 6-bit command, start bit is always 0, transmitter bit is 1 (host command)
     _sdcTx(command | 0x40);
 
     _sdcTx(argument >> 24);

@@ -4,9 +4,9 @@
 
 # https://gcc.gnu.org/onlinedocs/gcc/AVR-Options.html
 # avr-gcc -mmcu=atmega328p -print-multi-directory
-MCU = avr5
+# MCU = avr5
 # avr-gcc -mmcu=avr64ea28 -print-multi-directory
-# MCU = avrxmega2
+MCU = avrxmega2
 
 MAIN = libsdc.c
 SRC = 
